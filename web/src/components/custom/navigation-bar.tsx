@@ -12,7 +12,7 @@ const NavigationBar = (props: Props) => {
   return (
     <nav
       style={{ padding: "var(--padding-primary)" }}
-      className="container bg-background/50 backdrop-blur-md shadow-sm flex items-center justify-between "
+      className="z-50 container sticky top-0 bg-background/50 backdrop-blur-md shadow-sm flex items-center justify-between "
     >
       <Logo />
       {/* This navigation is for medium to larger screens */}

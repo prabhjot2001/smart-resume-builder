@@ -1,11 +1,9 @@
 "use client";
 
 import * as React from "react";
-import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 import { useTheme } from "next-themes";
-
+import { Sun, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Switch } from "@/components/ui/switch";
 
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme();
@@ -29,9 +27,9 @@ export function ThemeToggle() {
         aria-label="Toggle theme"
       >
         {isDarkMode ? (
-          <SunIcon className="h-[1.2rem] w-[1.2rem]" />
+          <Sun className="h-[1.2rem] w-[1.2rem]" />
         ) : (
-          <MoonIcon className="h-[1.2rem] w-[1.2rem]" />
+          <Moon className="h-[1.2rem] w-[1.2rem]" />
         )}
       </Button>
     </div>

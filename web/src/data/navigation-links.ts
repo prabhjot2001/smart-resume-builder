@@ -17,7 +17,7 @@ export const navigationLinks: NavbarLinks = [
   {
     label: "Parser",
     url: "resume-parser",
-    variant: "outline",
+    variant: "secondary",
   },
   {
     label: "Build Resume",

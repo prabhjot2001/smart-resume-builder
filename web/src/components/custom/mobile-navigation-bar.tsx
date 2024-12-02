@@ -10,19 +10,22 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { HamburgerMenuIcon } from "@radix-ui/react-icons";
+import { AlignJustify } from "lucide-react";
 import { ThemeToggle } from "./theme-toggle";
+import Logo from "./primary-logo";
 
 const MobileNavigationBar = () => {
   return (
     <div className="md:hidden">
       <Sheet>
         <SheetTrigger>
-          <HamburgerMenuIcon />
+          <AlignJustify className="text-primary font-bold text-lg" />
         </SheetTrigger>
         <SheetContent>
           <SheetHeader className="mb-4 border-b pb-2">
-            <SheetTitle>Menu</SheetTitle>
+            <SheetTitle className="flex items-center justify-center">
+              <Logo />
+            </SheetTitle>
             <SheetDescription>
               Begin by creating or uploading your resume.
             </SheetDescription>
